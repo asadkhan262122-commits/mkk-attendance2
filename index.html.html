@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MKK Smart Attendance</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:#eef3f8;color:#222}
+.sidebar{
+position:fixed;left:0;top:0;bottom:0;width:240px;
+background:linear-gradient(180deg,#0d47a1,#1976d2);
+color:white;padding:25px;
+}
+.sidebar h2{margin-bottom:30px}
+.sidebar ul{list-style:none}
+.sidebar li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.main{margin-left:240px;padding:25px}
+.topbar{
+background:white;padding:18px;border-radius:16px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+display:flex;justify-content:space-between;align-items:center;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;margin-top:20px;
+}
+.card{
+background:white;border-radius:18px;padding:22px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+.card h3{color:#666;font-size:14px}
+.card .num{font-size:34px;font-weight:bold;margin-top:10px}
+.actions{margin-top:20px}
+.btn{
+display:inline-block;padding:12px 20px;
+border-radius:10px;text-decoration:none;
+margin-right:10px;color:white;font-weight:bold;
+}
+.checkin{background:#16a34a}
+.checkout{background:#dc2626}
+.selfie{background:#2563eb}
+.table{
+margin-top:20px;background:white;border-radius:18px;
+padding:20px;box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}
+.footer{margin-top:20px;text-align:center;color:#666}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+<h2>MKK Global</h2>
+<ul>
+<li>🏠 Dashboard</li>
+<li>📅 Attendance</li>
+<li>📝 Leave</li>
+<li>💰 Payroll</li>
+<li>📊 Reports</li>
+<li>👥 Employees</li>
+<li>⚙ Settings</li>
+</ul>
+</div>
+
+<div class="main">
+<div class="topbar">
+<div>
+<h1>Smart Attendance Dashboard</h1>
+<p>Welcome back, Admin</p>
+</div>
+<div>04 June 2026</div>
+</div>
+
+<div class="cards">
+<div class="card"><h3>Total Employees</h3><div class="num">25</div></div>
+<div class="card"><h3>Present Today</h3><div class="num">21</div></div>
+<div class="card"><h3>Absent Today</h3><div class="num">4</div></div>
+<div class="card"><h3>Late Arrivals</h3><div class="num">3</div></div>
+</div>
+
+<div class="actions">
+<a class="btn checkin">Check In</a>
+<a class="btn checkout">Check Out</a>
+<a class="btn selfie">Selfie Attendance</a>
+</div>
+
+<div class="table">
+<h2>Today's Attendance</h2><br>
+<table>
+<tr>
+<th>Employee</th>
+<th>Check In</th>
+<th>Check Out</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>Employee 1</td>
+<td>09:01 AM</td>
+<td>06:03 PM</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>Employee 2</td>
+<td>09:30 AM</td>
+<td>-</td>
+<td>Late</td>
+</tr>
+</table>
+</div>
+
+<div class="footer">
+MKK Global Infotech Pvt. Ltd. | Smart Attendance & Payroll System
+</div>
+</div>
+
+</body>
+</html>
